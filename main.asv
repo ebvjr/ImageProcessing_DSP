@@ -52,9 +52,11 @@ histogram(Red,'FaceColor','r','EdgeColor','r');
 axis off
 axes(handles.g_original);
 histogram(Green,'FaceColor','g','EdgeColor','g');
+histogram(Green);
 axis off
 axes(handles.b_original);
-histogram(Blue,'FaceColor','b','EdgeColor','b');
+histogram(Blue,'FaceColor','g','EdgeColor','g');
+histogram(Blue);
 axis off
 
 apply_button_Callback(handles.apply_button,eventdata,handles);
@@ -74,6 +76,7 @@ global image_filtered;
 global image_original;
 image_original = imread(full_path);
 image_filtered = imread(full_path);
+
 
 low_in = get(handles.c_lowin,'value');
 low_out = get(handles.c_lowout,'value');
@@ -143,18 +146,6 @@ end
 
 axes(handles.image_generated);
 imshow(image_filtered);
-Red = image_filtered(:,:,1);
-Green = image_filtered(:,:,2);
-Blue = image_filtered(:,:,3);
-axes(handles.r_generated);
-histogram(Red,'FaceColor','r','EdgeColor','r');
-axis off
-axes(handles.g_generated);
-histogram(Green,'FaceColor','g','EdgeColor','g');
-axis off
-axes(handles.b_generated);
-histogram(Blue,'FaceColor','b','EdgeColor','b');
-axis off
 
 
 % --- Executes on selection change in popupmenu1.
