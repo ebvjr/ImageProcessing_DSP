@@ -161,7 +161,7 @@ function reset_button_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 global image_original
 global image_filtered
-figure(2),imhist(rgb2gray(image_filtered));
+figure(2),imhist(rgb2gray(image_original));
 
 % --- Executes on button press in c_laplacian.
 function c_laplacian_Callback(hObject, eventdata, handles)
@@ -416,3 +416,13 @@ function c_highout_CreateFcn(hObject, eventdata, handles)
 if isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
     set(hObject,'BackgroundColor',[.9 .9 .9]);
 end
+
+
+% --- Executes on button press in c_edited.
+function c_edited_Callback(hObject, eventdata, handles)
+% hObject    handle to c_edited (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global image_original
+global image_filtered
+figure(3),imhist(rgb2gray(image_filtered));
