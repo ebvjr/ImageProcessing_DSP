@@ -161,9 +161,7 @@ function reset_button_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 global image_original
 global image_filtered
-image_filtered = image_original;
-axes(handles.image_generated);
-imshow(image_filtered);
+figure(2),imhist(rgb2gray(image_filtered));
 
 % --- Executes on button press in c_laplacian.
 function c_laplacian_Callback(hObject, eventdata, handles)
