@@ -1,0 +1,6 @@
+https://www.mathworks.com/products/image.html
+https://www.mathworks.com/help/images/ref/fspecial.html
+https://www.mathworks.com/help/images/ref/imopen.html
+https://www.mathworks.com/help/vision/ref/vision.morphologicalopen-class.html
+http://www.ent.mrt.ac.lk/~ranga/courses/en4551_2010/L03_Article.pdf
+https://www.mathworks.com/matlabcentral/newsreader/view_thread/68712
