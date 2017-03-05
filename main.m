@@ -143,19 +143,25 @@ end
 
 axes(handles.image_generated);
 imshow(image_filtered);
-Red = image_filtered(:,:,1);
-Green = image_filtered(:,:,2);
-Blue = image_filtered(:,:,3);
-axes(handles.r_generated);
-histogram(Red,'FaceColor','r','EdgeColor','r');
-axis off
-axes(handles.g_generated);
-histogram(Green,'FaceColor','g','EdgeColor','g');
-axis off
-axes(handles.b_generated);
-histogram(Blue,'FaceColor','b','EdgeColor','b');
-axis off
-
+if(get(handles.c_grayscale, 'value') == 1 || get(handles.c_binary, 'value') == 1 )
+    cla(handles.r_generated);
+    cla(handles.b_generated);
+    axes(handles.g_generated);
+    imhist(image_filtered);
+else 
+    Red = image_filtered(:,:,1);
+    Green = image_filtered(:,:,2);
+    Blue = image_filtered(:,:,3);
+    axes(handles.r_generated);
+    histogram(Red,'FaceColor','r','EdgeColor','r');
+    axis off
+    axes(handles.g_generated);
+    histogram(Green,'FaceColor','g','EdgeColor','g');
+    axis off
+    axes(handles.b_generated);
+    histogram(Blue,'FaceColor','b','EdgeColor','b');
+    axis off
+end
 
 % --- Executes on selection change in popupmenu1.
 function popupmenu1_Callback(hObject, eventdata, handles)
