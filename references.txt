@@ -1,6 +1,6 @@
-https://www.mathworks.com/products/image.html
-https://www.mathworks.com/help/images/ref/fspecial.html
-https://www.mathworks.com/help/images/ref/imopen.html
-https://www.mathworks.com/help/vision/ref/vision.morphologicalopen-class.html
-http://www.ent.mrt.ac.lk/~ranga/courses/en4551_2010/L03_Article.pdf
-https://www.mathworks.com/matlabcentral/newsreader/view_thread/68712
+Image Processing Toolbox. (n.d.). Retrieved March 05, 2017, from https://www.mathworks.com/products/image.html
+fspecial - MATLAB. (n.d.). Retrieved March 05, 2017, from https://www.mathworks.com/help/images/ref/fspecial.html
+Morphologically open image - MATLAB imopen. (n.d.). Retrieved March 05, 2017, from https://www.mathworks.com/help/images/ref/imopen.html
+Perform morphological opening on an image - MATLAB. (n.d.). Retrieved March 05, 2017, from https://www.mathworks.com/help/vision/ref/vision.morphologicalopen-class.html
+How to calculate a RGB histogram? (n.d.). Retrieved March 05, 2017, from https://www.mathworks.com/matlabcentral/newsreader/view_thread/68712
+
