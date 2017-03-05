@@ -43,6 +43,7 @@ full_path = strcat(pathname,filename);
 disp(full_path);
 axes(handles.image_original);
 imshow(full_path);
+apply_button_Callback(handles.apply_button,eventdata,handles);
 
 % --------------------------------------------------------------------
 function file_save_Callback(hObject, eventdata, handles)
